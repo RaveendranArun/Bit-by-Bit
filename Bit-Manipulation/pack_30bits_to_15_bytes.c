@@ -1,6 +1,6 @@
 /* 
  * An array of 4 integers, where each integer has only 30 useful 
- * bits (total = 120 bits = 15 bytes), and you want to pack those 30-bit values 
+ * bits (total = 120 bits = 15 bytes), pack those 30-bit values 
  * tightly into a 15-byte uint8_t buffer.
  */
 
