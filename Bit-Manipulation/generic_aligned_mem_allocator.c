@@ -21,6 +21,12 @@ void* aligned_malloc(size_t size, size_t alignment)
     return (void* )aligned;
 }
 
+void aligned_free(void* aligned)
+{
+    if (aligned)
+        free((void* )(((uintptr_t*)aligned)[-1]));
+}
+
 int main()
 {
     size_t size = 100;
@@ -43,5 +49,7 @@ int main()
         printf("Not aligned");
     }
 
+    aligned_free(ptr);
+    
     return 0;
 }
