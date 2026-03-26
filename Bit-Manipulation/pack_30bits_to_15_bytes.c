@@ -32,7 +32,7 @@ void pack_120bits_to_15bytes(uint32_t input[4], uint8_t output[15])
     }
 }
 
-void unpack_15bytes_to_30bits(uint8_t input[15], uint32_t output[4])
+void unpack_15bytes_to_120bits(uint8_t input[15], uint32_t output[4])
 {
     uint32_t bit_pos = 0;
     for (uint32_t i = 0; i < 4; ++i)
