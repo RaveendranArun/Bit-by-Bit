@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-void pack_30bits_to_15bytes(uint32_t input[4], uint8_t output[15])
+void pack_120bits_to_15bytes(uint32_t input[4], uint8_t output[15])
 {
     uint32_t bit_pos = 0;
 
